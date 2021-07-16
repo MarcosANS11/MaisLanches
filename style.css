@@ -1,0 +1,699 @@
+/*====RESET====*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*====VARIABLES====*/
+:root {
+  /*COLOR*/
+  --base-color: #ff8303; /*#810000       #ff8303*/
+
+  /*COLOR FONT*/
+  --title-color: #1b1a17;
+  --text-color: #6e7076;
+  /*FONTS*/
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+  --width-img: auto;
+}
+
+/*====BASE====*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 400 1rem var(--body-font);
+  color: var(--text-color);
+  background-color: #ffffff;
+}
+
+/*====LAYOUT====*/
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.grid {
+  display: grid;
+  padding: 2rem;
+}
+
+#header {
+  height: 4.5rem;
+  border-bottom: 1px solid #e4e4e4;
+  background-color: var(--base-color); /*hsl(0, 0%, 98%)*/
+  display: flex;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/*====LOGO====*/
+.logo {
+  font: 700 2rem var(--title-font);
+  color: white;
+}
+
+/*====NAVIGATION====*/
+nav {
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.toggle {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.icon-menu {
+  position: relative;
+}
+
+nav .icon-cross {
+  font-size: 1.2rem;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+nav.show .icon-cross {
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  color: var(--base-color);
+  right: 1.75rem;
+  top: 1.75rem;
+}
+
+nav ul li {
+  text-align: center;
+  font: 700 2rem var(--title-font);
+  color: var(--title-color);
+  margin: 0 0.5rem;
+  padding: 1.5rem 0;
+}
+
+.show a.title {
+  text-align: center;
+  font: 700 2rem var(--title-font);
+  color: var(--title-color);
+  transition: 0.3s;
+}
+
+.show a.title:hover {
+  color: var(--base-color);
+}
+
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+  right: -10rem;
+  transition: 0.3s;
+}
+
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+  position: fixed;
+  display: grid;
+  top: 0;
+  right: 0;
+  width: 55vw;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+nav ul {
+  margin: 5rem auto;
+  display: -ms-flexbox;
+  position: absolute;
+  visibility: hidden;
+}
+
+nav.show ul {
+  display: -ms-flexbox;
+  position: unset;
+  text-align: center;
+  visibility: visible;
+}
+
+nav.show .pedido {
+  font: 700 1.75rem var(--title-font);
+  color: var(--title-color);
+  background-color: #f0a500;
+  padding: 0 2rem;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.25rem;
+  transition: 0.3s;
+}
+
+nav.show .pedido:hover {
+  background-color: #ffd31d;
+}
+
+/*====HOME====*/
+#home {
+  background-color: #fafafa;
+}
+
+#home section .section {
+  width: 27.1875rem;
+  color: #757575;
+}
+
+.carrossel {
+  margin-top: 4.5rem;
+  display: flex;
+}
+
+#home figure {
+  position: relative;
+  display: flex;
+}
+
+#home figcaption {
+  position: absolute;
+  color: white;
+  align-self: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+#home figcaption h2 {
+  font: 700 2rem var(--title-font);
+  color: white;
+  align-self: center;
+}
+
+#home figcaption p {
+  font: 500 1.5rem var(--body-font);
+  color: hsl(0, 0%, 90%);
+  text-align: center;
+}
+
+.home-order {
+  padding: 3rem 0;
+}
+
+.home-order h1 {
+  /*margin-top: 3rem;*/
+  margin-bottom: 1rem;
+
+  font: 700 1.875rem var(--title-font);
+  color: var(--title-color);
+}
+
+.button {
+  font: 500 1.25rem var(--body-font);
+  color: white;
+  background-color: #f0a500;
+  height: 3.5rem;
+  padding: 0 2rem;
+  margin-top: 2rem;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.25rem;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #ffd31d;
+}
+
+/*====SWIPER====*/
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgba(205, 205, 205, 0.5);
+}
+
+/*====CARDÁPIO====*/
+#cardapio .container h1 a {
+  font: 700 1.875rem var(--title-font);
+  color: var(--title-color);
+  width: fit-content;
+}
+
+#cardapio .container p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sabores {
+  display: grid;
+}
+.sabores img {
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+#cardapio img {
+  height: 57.6vw;
+}
+
+#cardapio figure h3 {
+  font: 700 1.25rem var(--title-font);
+  color: var(--title-color);
+  text-align: center;
+  border-bottom: 0.25rem solid var(--base-color);
+}
+
+#cardapio figure {
+  margin: 2rem auto;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+  width: 100%;
+  border: 0.05rem solid var(--base-color);
+  transition: 0.3s;
+}
+
+#cardapio figure:hover {
+  transform: scale(1.05, 1.05);
+}
+
+/*PROMOTIONS*/
+#promotions {
+  background-color: #fafafa;
+  padding-bottom: 6rem;
+  margin-top: 2rem;
+}
+
+#promotions h1 {
+  font: 700 2rem var(--title-font);
+  color: var(--title-color);
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#promotions h3 {
+  font: 700 1.5rem var(--title-font);
+  color: var(--base-color);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#promotions p {
+  text-align: center;
+  font: 500 1.25rem var(--body-font);
+}
+
+/*====FOOTER====*/
+footer {
+  background-color: var(--title-color);
+  height: auto;
+  padding: 2rem 0;
+}
+
+footer .logo {
+  margin: 2rem;
+  font-size: 2.5rem;
+}
+
+footer .icones i {
+  padding: 1rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+#footer .icones a {
+  transition: 0.3s;
+  display: inline-block;
+}
+
+#footer .icones a:hover {
+  transform: scale(1.5, 1.5);
+}
+
+footer .icones {
+  margin: 2rem;
+}
+
+#footer .button {
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+
+.contato {
+  margin-left: 2rem;
+}
+
+.contato ul {
+  margin-left: 0;
+}
+
+.contato ul li {
+  color: white;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.contato i {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+/*PÀGINA DE CARDÁPIO*/
+#cardapio-page .sanduiche,
+.pizza,
+.sobremesas,
+.bebidas {
+  align-items: center;
+}
+#cardapio-page h1 {
+  font: 700 3rem var(--title-font);
+  color: var(--title-color);
+  text-align: center;
+  margin: 4rem 0;
+}
+
+#cardapio-page img {
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  width: 20rem;
+  height: 20rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+#cardapio-page h2 {
+  font: 700 1.5rem var(--title-font);
+  color: var(--base-color);
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#cardapio-page .text {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.tipos {
+  display: grid;
+  place-content: center;
+  gap: 3rem;
+}
+
+.tipo {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+}
+
+/*PEDIDO*/
+#cardapio-order {
+  margin-bottom: 4rem;
+}
+
+#cardapio-order .botao {
+  margin-top: 2rem;
+  display: flex;
+}
+
+/*Adaptação do menu para que elçe caiba na tela do ceular quando rotacionar o celular*/
+@media (max-height: 475px) {
+  /*MENU*/
+  nav ul {
+    margin: 1rem auto;
+  }
+
+  nav ul li {
+    padding: 1rem 0;
+  }
+}
+
+/*ADAPTAÇÃO PARA DISPOSITIVOS COM TELAS MAIORES QUE 1200px*/
+@media (min-width: 1200px) {
+  body {
+    font: 400 1.125rem var(--body-font);
+  }
+
+  /*MENU*/
+  .toggle {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+  }
+
+  nav ul {
+    top: -4.5rem;
+    right: 0;
+    display: flex;
+    position: absolute;
+    margin-bottom: 0;
+    gap: 2rem;
+    align-items: center;
+    margin-right: 1.5rem;
+    visibility: visible;
+  }
+
+  nav ul li {
+    padding: 0;
+  }
+
+  a.title {
+    font: 700 1.125rem var(--title-font);
+    color: #ffffff;
+  }
+
+  a.title {
+    transition: 0.2s;
+  }
+
+  a.title:hover {
+    font-size: 1.25rem;
+  }
+
+  .pedido {
+    font: 700 1.75rem var(--title-font);
+    color: #ffffff;
+    background-color: #f0a500;
+    padding: 0 2rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0.25rem;
+    transition: 0.3s;
+  }
+
+  .pedido:hover {
+    background-color: #ffd31d;
+  }
+
+  /*HOME*/
+  #home {
+    display: flex;
+    align-items: center;
+  }
+
+  #home h1 {
+    font-size: 2.25rem;
+  }
+
+  #home .button {
+    font-size: 1.5rem;
+  }
+
+  .carrossel {
+    width: 70%;
+    height: auto;
+    border-bottom-right-radius: 0.3rem;
+  }
+  .home-order {
+    padding: 3rem;
+    margin-top: 4.5rem;
+  }
+
+  .div-button {
+    text-align: center;
+  }
+
+  /*FOOTER*/
+  footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+
+  .footer-1 {
+    display: grid;
+  }
+  .contato {
+    display: flex;
+    align-items: center;
+  }
+
+  #footer .logo {
+    margin-bottom: 0;
+  }
+
+  .contato ul {
+    display: grid;
+    margin-right: 17rem;
+  }
+
+  #footer .button {
+    position: absolute;
+    right: 1.5rem;
+  }
+}
+
+/*ADAPTAÇÃO PARA DISPOSITIVOS COM TELAS MAIORES QUE 1023px*/
+@media (min-width: 1023px) {
+  /*CARDÁPIO*/
+  #cardapio .container h1 a {
+    font-size: 2.25rem;
+  }
+
+  #cardapio .sabores {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  #cardapio figure {
+    width: 80%;
+  }
+  #cardapio img {
+    height: 23vw;
+  }
+
+  #cardapio figure h3 {
+    font-size: 1.5rem;
+  }
+
+  /*PROMOTIONS*/
+  #promotions h1 {
+    font-size: 2.25rem;
+  }
+}
+
+/*ADAPTAÇÃO PARA DISPOSITIVOS COM TELAS MAIORES QUE 767px*/
+@media (min-width: 767px) {
+  /*LOGO*/
+  .logo {
+    font: 700 2.5rem var(--title-font);
+    color: white;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+
+  .footer-1 {
+    display: grid;
+  }
+  .contato {
+    display: flex;
+    align-items: center;
+  }
+
+  #footer .logo {
+    margin-bottom: 0;
+  }
+
+  .contato ul {
+    display: grid;
+    margin-right: 17rem;
+  }
+
+  #footer .button {
+    position: absolute;
+    right: 1.5rem;
+  }
+
+  /*PROMOTIONS*/
+  #promotions h1 {
+    font-size: 2.25rem;
+  }
+
+  /*CARDAPIO PAGE*/
+  #cardapio-page .sanduiche,
+  .pizza,
+  .sobremesas,
+  .bebidas {
+    align-items: center;
+    display: flex;
+  }
+
+  #cardapio-page img {
+    border-radius: 0.25rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    width: 20vw;
+    height: 20vw;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    opacity: 1;
+    visibility: visible;
+    display: inline-flex;
+  }
+}
+
+/*Adição de imagens no cardápio evitando uma rolagem no eixo x*/
+
+@media (min-width: 375px) {
+  /*CARDAPIO PAGE*/
+  #cardapio-page .sanduiche,
+  .pizza,
+  .sobremesas,
+  .bebidas {
+    align-items: center;
+    display: flex;
+  }
+
+  #cardapio-page img {
+    border-radius: 0.25rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    width: 15vw;
+    height: 15vw;
+    margin-left: 1rem;
+    margin-right: 0.25rem;
+    margin-bottom: 1rem;
+    opacity: 1;
+    visibility: visible;
+    display: inline-flex;
+  }
+}

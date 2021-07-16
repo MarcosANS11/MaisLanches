@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!--PAGE INFO-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>+Lanches</title>
+
+    <!--SWIPER-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!--ICONES-->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <!--LOGO-->
+        <a href="#" class="logo">+Lanches</a>
+
+        <!--MENU-->
+        <div class="menu">
+          <ul>
+            <li><a class="title" href="#">Início</a></li>
+            <li><a class="title" href="#cardapio">Cardápio</a></li>
+            <li>
+              <a class="title" href="#promotions">Promoções</a>
+            </li>
+            <li>
+              <a
+                class="pedido"
+                href="https://api.whatsapp.com/send?phone=5582981571008&text=Olá,%20gostaria%20de%20fazer%20um%20pedido."
+                target="_blank"
+                >Fazer pedido</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-cross"></div>
+        <!--MENU-->
+      </nav>
+    </header>
+    <main>
+      <!--HOME-->
+      <section id="home">
+        <div class="carrossel swiper-container">
+          <div class="swiper-wrapper">
+            <div class="home-1 swiper-slide">
+              <figure class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80"
+                  alt="Um hambúrguer com batata frita na frente de um fundo preto"
+                />
+                <figcaption>
+                  <h2>Lanches para cada gosto</h2>
+                  <p>Temos diversos tipos de lanches</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="home-2 swiper-slide">
+              <figure class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt="Pizza"
+                />
+                <figcaption>
+                  <h2>Promoções</h2>
+                  <p>Todos os dias da semana tem uma promoção diferenete</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="home-3 swiper-slide">
+              <figure class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1606312618475-79449b044093?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fGRlc3NlcnR8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt="Três donuts na frente de um fundo preto"
+                />
+                <figcaption>
+                  <h2>Delivery com frete grátis</h2>
+                  <p>A entrega para qualquer bairro de Arapiraca-AL é grátis</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="container">
+          <div class="home-order">
+            <h1>Faça já o seu pedido!!!</h1>
+            <p>
+              Faça o pedido pelo Whatsapp e receba em sua casa com uma entrega
+              grátis para todos os bairros de Arapiraca-AL
+            </p>
+            <div class="div-button">
+              <a
+                href="https://api.whatsapp.com/send?phone=5582981571008&text=Olá,%20gostaria%20de%20fazer%20um%20pedido."
+                class="button"
+                target="_blank"
+                >Fazer pedido</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--CARDÁPIO-->
+      <section class="section" id="cardapio">
+        <div class="container">
+          <h1>
+            <a href="cardapio.html"> Cardápio </a>
+          </h1>
+          <p>
+            Temos diversos tipos de lanches. Clique nas imagens para ver o
+            cardápio com todos os lanches disponíveis.
+          </p>
+          <div class="sabores">
+            <figure class="sabor">
+              <a href="cardapio.html">
+                <img
+                  src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80"
+                  alt="Pizza de pepperoni"
+                />
+
+                <h3>Pizzas</h3>
+              </a>
+            </figure>
+            <figure class="sabor">
+              <a href="cardapio.html">
+                <img
+                  src="https://images.unsplash.com/photo-1586816001966-79b736744398?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFtYnVyZ3VlcnxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt="Hambúrguer"
+                />
+
+                <h3>Sanduíches</h3>
+              </a>
+            </figure>
+
+            <figure class="sabor">
+              <a href="cardapio.html">
+                <img
+                  src="https://images.unsplash.com/photo-1574085733277-851d9d856a3a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzc2VydHxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt="Três cupcakes"
+                />
+
+                <h3>Sobremesas</h3>
+              </a>
+            </figure>
+            <figure class="sabor">
+              <a href="cardapio.html">
+                <img
+                  src="https://images.unsplash.com/photo-1594971475674-6a97f8fe8c2b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fHNvZGF8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt="Três garrafinhas de Coca-Cola"
+                />
+
+                <h3>Bebidas</h3>
+              </a>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!--PROMOÇÕES-->
+      <section id="promotions">
+        <div class="container">
+          <h1>Promoções</h1>
+          <h3>Segunda e Terça</h3>
+          <p>10% de desconto nas pizzas.</p>
+          <h3>Quarta e Quinta</h3>
+          <p>5% de desconto nos sanduíches.</p>
+          <h3>Sexta e Sábado</h3>
+          <p>5% de desconto nas bebidas e sobremesas.</p>
+          <h3>Domingo</h3>
+          <p>10% de desconto no pedido geral.</p>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer id="footer">
+      <div class="footer-1">
+        <a href="#" class="logo">+Lanches</a>
+        <div class="icones">
+          <a href="https://instagram.com" target="_blank"
+            ><i class="icon-instagram"></i
+          ></a>
+          <a href="https://facebook.com" target="_blank"
+            ><i class="icon-facebook"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="icon-twitter"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="contato">
+        <a
+          href="https://api.whatsapp.com/send?phone=5582981571008&text="
+          target="_blank"
+          class="button"
+          ><i class="icon-whatsapp"></i>Entrar em contato</a
+        >
+
+        <ul class="contato">
+          <li><i class="icon-phone"></i>(82) 98157-1008</li>
+          <li>
+            <i class="icon-map-pin"></i> Rua abcd, nº 234<br />
+            Arapiraca-AL
+          </li>
+          <li><i class="icon-mail"></i> abcd@maislanches.com</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!--SWIPER-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--second.js-->
+    <script src="swiper.js"></script>
+    <!--main.js-->
+    <script src="main.js"></script>
+  </body>
+</html>

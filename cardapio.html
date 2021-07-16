@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>+Lanches cardápio</title>
+    <!--ICONES-->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <!--LOGO-->
+        <a href="index.html" class="logo">+Lanches</a>
+
+        <!--MENU-->
+        <div class="menu">
+          <ul>
+            <li><a class="title" href="index.html">Inicio</a></li>
+            <li><a class="title" href="#cardapio-page">Cardápio</a></li>
+            <li>
+              <a class="title" href="index.html#promotions">Promoções</a>
+            </li>
+            <li>
+              <a
+                class="pedido"
+                href="https://api.whatsapp.com/send?phone=5582981571008&text=Olá,%20gostaria%20de%20fazer%20um%20pedido."
+                target="_blank"
+                >Fazer pedido</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-cross"></div>
+        <!--MENU-->
+      </nav>
+    </header>
+    <main>
+      <section class="section" id="cardapio-page">
+        <h1>Cardápio</h1>
+        <div class="container tipos">
+          <div class="tipo">
+            <h2>Pizzas</h2>
+            <div class="pizza">
+              <div class="text">
+                <p>Calabresa................................R$25.00</p>
+                <p>Frango catupiry.......................R$30.00</p>
+                <p>Muçarela..................................R$25.00</p>
+                <p>Brigadeiro................................R$28.00</p>
+                <p>Portuguesa..............................R$30.00</p>
+              </div>
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                  alt="Uma pessoa pegando uma fatia de pizza que está dentro de uma caixa de pizza"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="tipo">
+            <h2>Sanduíches</h2>
+            <div class="sanduiche">
+              <div class="text">
+                <p>X-bacon....................................R$18.00</p>
+                <p>X-burguer..................................R$15.00</p>
+                <p>X-salada....................................R$12.00</p>
+                <p>Bauru...........................................R$8.00</p>
+                <p>X-tudo........................................R$23.00</p>
+              </div>
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fHBpenphfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt="Sanduíche"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="tipo">
+            <h2>Sobremesas</h2>
+            <div class="sobremesas">
+              <div class="text">
+                <p>Bolo de chocolate.......................R$5.00</p>
+                <p>Mousse........................................R$2.00</p>
+                <p>Doce de leite................................R$2.00</p>
+                <p>Torta de limão.............................R$6.00</p>
+                <p>Pudim...........................................R$2.00</p>
+              </div>
+
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1569929232526-d9c6578e1531?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGRlc3NlcnRzfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt="Bolo de chocolate"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="tipo">
+            <h2>Bebidas</h2>
+            <div class="bebidas">
+              <div class="text">
+                <p>Refrigereantes(1L).......................R$4.50</p>
+                <p>Refrigerantes(2L).........................R$6.50</p>
+                <p>Sucos(500ml)..............................R$7.00</p>
+                <p>Milkshake(400ml)......................R$10.00</p>
+                <p>
+                  Obs: refrigenrantes disponíveis: <br />
+                  Coca-cola, Guaraná, Pepsi, Fanta, Sprite.
+                </p>
+              </div>
+              <div class="image">
+                <img
+                  src="https://images.unsplash.com/photo-1514178255089-603d3a35b24a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29rZXxlbnwwfDJ8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt="Lata de Coca-cola"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container" id="cardapio-order">
+          <div class="home-order">
+            <h1>Faça já o seu pedido!!!</h1>
+            <p>
+              Faça o pedido pelo Whatsapp e receba em sua casa com uma entrega
+              grátis para todos os bairros de Arapiraca-AL
+            </p>
+            <div class="botao">
+              <a
+                href="https://api.whatsapp.com/send?phone=5582981571008&text=Olá,%20gostaria%20de%20fazer%20um%20pedido."
+                target="_blank"
+                class="button"
+                >Fazer pedido</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer-1">
+        <a href="index.html" class="logo">+Lanches</a>
+        <div class="icones">
+          <a href="https://instagram.com" target="_blank"
+            ><i class="icon-instagram"></i
+          ></a>
+          <a href="https://facebook.com" target="_blank"
+            ><i class="icon-facebook"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="icon-twitter"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="contato">
+        <a
+          href="https://api.whatsapp.com/send?phone=5582981571008&text="
+          target="_blank"
+          class="button"
+          ><i class="icon-whatsapp"></i>Entrar em contato</a
+        >
+
+        <ul class="contato">
+          <li><i class="icon-phone"></i>(82) 98157-1008</li>
+          <li>
+            <i class="icon-map-pin"></i> Rua abcd, nº 234<br />
+            Arapiraca-AL
+          </li>
+          <li><i class="icon-mail"></i> abcd@maislanches.com</li>
+        </ul>
+      </div>
+    </footer>
+    <!--second.JS-->
+    <script src="main.js"></script>
+  </body>
+</html>
