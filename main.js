@@ -8,10 +8,9 @@ for (const element of toggle) {
   })
 }
 
-const navigation = document.querySelector('#header nav')
 const list = document.querySelectorAll('nav li')
 for (const element of list) {
   element.addEventListener('click', function () {
-    navigation.classList.remove('show')
+    nav.classList.remove('show')
   })
 }
