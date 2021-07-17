@@ -1,4 +1,4 @@
-@import 'https://marcosans11.github.io/MaisLanches/~swiper/css/swiper.min.css';
+@import "https://unpkg.com/swiper/swiper-bundle.min.css";
 
 /*====RESET====*/
 * {
