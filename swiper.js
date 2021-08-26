@@ -1,5 +1,5 @@
 //=============SWIPER===============//
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   direction: 'horizontal',
   loop: true,
@@ -10,5 +10,6 @@ const swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
   },
-  autoplay: true
+  autoplay: true,
+  speed: 500
 })
