@@ -21,10 +21,10 @@ ul {
 /*====VARIABLES====*/
 :root {
   /*COLOR*/
-  --base-color: #ff8303; /*#810000       #ff8303*/
+  --base-color: #ff8303; /*#810000*/
 
   /*COLOR FONT*/
-  --title-color: #17181B;
+  --title-color: #17181b; /*#1b1a17*/
   --text-color: #6e7076;
   /*FONTS*/
   --title-font: 'Poppins', sans-serif;
@@ -442,12 +442,59 @@ footer .icones {
   margin-bottom: 4rem;
 }
 
-#cardapio-order .botao {
-  margin-top: 2rem;
-  display: flex;
+.form {
+  width: 80%;
 }
 
-/*Adaptação do menu para que elçe caiba na tela do ceular quando rotacionar o celular*/
+#cardapio-order .botao {
+  display: flex;
+  justify-content: center;
+}
+
+#cardapio-order .botao a {
+  margin-top: 1.25rem;
+}
+
+.home-order form {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.home-order textarea {
+  height: 2.5rem;
+  border-radius: 0.2rem;
+  border-color: var(--title-color);
+  font: 400 1rem var(--body-font);
+  color: var(--text-color);
+  background: #fafafa;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+#pedido {
+  height: 8rem;
+}
+
+textarea::-webkit-input-placeholder {
+  font: 400 1.125rem var(--body-font);
+  color: var(--text-color);
+  padding: 0.5rem;
+}
+
+textarea:-moz-placeholder {
+  font: 400 1.125rem var(--body-font);
+  color: var(--text-color);
+}
+
+textarea {
+  resize: none;
+}
+
+/*Adaptação do menu para que ele caiba na tela do ceular quando rotacionar o celular*/
 @media (max-height: 475px) {
   /*MENU*/
   nav ul {
@@ -541,6 +588,7 @@ footer .icones {
     height: auto;
     border-bottom-right-radius: 0.3rem;
   }
+
   .home-order {
     padding: 3rem;
     margin-top: 4.5rem;
@@ -551,32 +599,14 @@ footer .icones {
   }
 
   /*FOOTER*/
-  footer {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1rem;
-  }
-
-  .footer-1 {
-    display: grid;
-  }
   .contato {
     display: flex;
     align-items: center;
   }
 
-  #footer .logo {
-    margin-bottom: 0;
-  }
-
-  .contato ul {
-    display: grid;
-    margin-right: 17rem;
-  }
-
-  #footer .button {
-    position: absolute;
-    right: 1.5rem;
+  /*PEDIDO*/
+  .home-order form {
+    gap: 0.75rem;
   }
 }
 
@@ -650,30 +680,23 @@ footer .icones {
     font-size: 2.25rem;
   }
 
-  /*CARDAPIO PAGE*/
-  #cardapio-page .sanduiche,
-  .pizza,
-  .sobremesas,
-  .bebidas {
-    align-items: center;
-    display: flex;
-  }
-
   #cardapio-page img {
-    border-radius: 0.25rem;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
     width: 20vw;
     height: 20vw;
     margin-left: 1.5rem;
-    margin-bottom: 1rem;
-    opacity: 1;
-    visibility: visible;
-    display: inline-flex;
+  }
+
+  /*PEDIDO*/
+  .form {
+    width: 60%;
+  }
+
+  .home-order form {
+    width: 100%;
   }
 }
 
 /*Adição de imagens no cardápio evitando uma rolagem no eixo x*/
-
 @media (min-width: 375px) {
   /*CARDAPIO PAGE*/
   #cardapio-page .sanduiche,
