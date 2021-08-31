@@ -33,19 +33,13 @@
               <a class="title" href="index.html#promotions">Promoções</a>
             </li>
             <li>
-              <a
-                class="pedido"
-                href="https://api.whatsapp.com/send?phone=5582981571008&text=Olá,%20gostaria%20de%20fazer%20um%20pedido."
-                target="_blank"
-                >Fazer pedido</a
-              >
+              <a class="pedido" href="#cardapio-order">Fazer pedido</a>
             </li>
           </ul>
         </div>
 
         <div class="toggle icon-menu"></div>
         <div class="toggle icon-cross"></div>
-        <!--MENU-->
       </nav>
     </header>
     <main>
@@ -111,12 +105,12 @@
             <h2>Bebidas</h2>
             <div class="bebidas">
               <div class="text">
-                <p>Refrigerantes(1L).......................R$4.50</p>
+                <p>Refrigereantes(1L).......................R$4.50</p>
                 <p>Refrigerantes(2L).........................R$6.50</p>
                 <p>Sucos(500ml)..............................R$7.00</p>
                 <p>Milkshake(400ml)......................R$10.00</p>
                 <p>
-                  Obs: refrigerantes disponíveis: <br />
+                  Obs: refrigenrantes disponíveis: <br />
                   Coca-cola, Guaraná, Pepsi, Fanta, Sprite.
                 </p>
               </div>
@@ -131,7 +125,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="pedido-section">
         <div class="container" id="cardapio-order">
           <div class="home-order">
             <h1>Faça já o seu pedido!!!</h1>
@@ -139,13 +133,43 @@
               Faça o pedido pelo Whatsapp e receba em sua casa com uma entrega
               grátis para todos os bairros de Arapiraca-AL
             </p>
-            <div class="botao">
-              <a
-                href="https://api.whatsapp.com/send?phone=5582981571008&text=Olá,%20gostaria%20de%20fazer%20um%20pedido."
-                target="_blank"
-                class="button"
-                >Fazer pedido</a
-              >
+            <div class="form">
+              <form>
+                <textarea
+                  name="nome"
+                  id="nome"
+                  placeholder="Digite o seu nome"
+                  wrap="hard"
+                ></textarea>
+                <textarea
+                  name="numero"
+                  id="numero"
+                  placeholder="Digite o número de contato"
+                  wrap="hard"
+                ></textarea>
+                <textarea
+                  name="address"
+                  id="address"
+                  placeholder="Endereço de entrega"
+                  wrap="hard"
+                ></textarea>
+                <textarea
+                  name="pedido"
+                  id="pedido"
+                  placeholder="Digite o seu pedido"
+                  wrap="hard"
+                ></textarea>
+              </form>
+              <div class="botao">
+                <a
+                  href="#"
+                  onclick="order()"
+                  id="botao-pedido"
+                  target="_blank"
+                  class="button"
+                  >Fazer pedido</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -187,5 +211,6 @@
     </footer>
     <!--second.JS-->
     <script src="main.js"></script>
+    <script type="./module" src="order.js"></script>
   </body>
 </html>
